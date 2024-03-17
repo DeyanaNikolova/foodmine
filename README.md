@@ -27,4 +27,7 @@
         1. Add to home component
         2. Add ts
         3. Add html
-        4. Add css         
+        4. Add css      
+
+        https://github.com/nasirjd/foodmine-course/blob/master/frontend/src/app/services/food.service.ts
+           
