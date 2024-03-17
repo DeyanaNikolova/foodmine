@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/partials/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { StarRatingComponent } from './components/partials/star-rating/star-rating.component';
 import { SearchComponent } from './components/partials/search/search.component';
+import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 
 
 
@@ -17,7 +18,8 @@ import { SearchComponent } from './components/partials/search/search.component';
     HeaderComponent,
     HomeComponent,
     StarRatingComponent,
-    SearchComponent
+    SearchComponent,
+    FoodPageComponent
   ],
   imports: [
     BrowserModule,
