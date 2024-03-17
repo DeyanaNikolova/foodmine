@@ -5,8 +5,12 @@ import { HomeComponent } from './components/pages/home/home.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'search/:searchTerm',
+    component: HomeComponent
   },
 ];
 
