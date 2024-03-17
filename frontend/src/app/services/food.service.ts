@@ -3,13 +3,18 @@ import { Food } from '../shared/models/food';
 import { sample_foods } from '../../data';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FoodService {
+  constructor() {}
 
-  constructor() { }
+  getAll(): Food[] {
+    return sample_foods;
+  }
 
-  getAll():Food[]{
-return sample_foods;
+  geAllFoodsBySearchTerm(searchTerm: string) {
+    return this.getAll().filter((food) =>
+      food.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
   }
 }
