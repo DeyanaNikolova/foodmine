@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-not-found',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './not-found.component.css'
 })
 export class NotFoundComponent {
+@Input()
+  visible: boolean = false;
 
+@Input()
+notFoundMessage: string = 'Nothing found!' ;
+
+@Input()
+resetLinkText: string = 'Reset';
+
+@Input()
+resetLinkRoute: string = '/';
 }
