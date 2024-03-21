@@ -48,5 +48,16 @@
         2. Add ts
         3. Add html
         4. Add css
+9. 
+10. Not Found!
+    1. Generate Component
+        1. Add ts
+        2. Add html
+        3. Add css
+    2. Add to pages
+        1. Home Page
+        2. Food Page
+        3. Cart Page    
+
                 
            
