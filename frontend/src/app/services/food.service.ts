@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Food } from '../shared/models/food';
-import { sample_foods } from '../../data';
+import { sample_foods, sample_tags } from '../../data';
 import { Tag } from '../shared/models/Tag';
 
 @Injectable({
@@ -24,16 +24,7 @@ export class FoodService {
   }
 
   getAllTags():Tag[] {
-    return [
-      {name: 'All', count: 14 },
-      {name: 'FastFood', count: 4 },
-      {name: 'Pizza', count: 2 },
-      {name: 'Lunch', count: 3 },
-      {name: 'SlowFood', count: 2 },
-      {name: 'Hamburger', count: 1 },
-      {name: 'Fry', count: 1 },
-      {name: 'Soup', count: 1 },
-    ];
+    return sample_tags;
   }
 
   getAllFoodsByTag(tag: string): Food[] {
