@@ -9,6 +9,7 @@ import { StarRatingComponent } from './components/partials/star-rating/star-rati
 import { SearchComponent } from './components/partials/search/search.component';
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 import { TagsComponent } from './components/partials/tags/tags.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 
 
 
@@ -21,7 +22,8 @@ import { TagsComponent } from './components/partials/tags/tags.component';
     StarRatingComponent,
     SearchComponent,
     FoodPageComponent,
-    TagsComponent
+    TagsComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,
