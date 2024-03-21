@@ -28,6 +28,25 @@
         2. Add ts
         3. Add html
         4. Add css      
-
-        https://github.com/nasirjd/foodmine-course/blob/master/frontend/src/app/services/food.service.ts
+7. Tag Bar
+    1. ceate Tag model
+    2. Add sample tags to data.ts
+    3. Food service
+        1. Add get all tags method
+        2. Add get all foods by tag methd
+    4. Add tags route
+    5. Show tag result in Home page   
+    6. Generate Tas component
+        1. Add to Home component
+        2. Ad ts
+        3. Add html
+        4. Add css    
+8. Food page
+    1. Add method to food service
+    2. Generate Food Page Component
+        1. Add route
+        2. Add ts
+        3. Add html
+        4. Add css
+                
            
