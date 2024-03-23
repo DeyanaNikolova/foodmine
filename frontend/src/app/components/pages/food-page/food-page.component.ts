@@ -11,7 +11,6 @@ import { CartService } from '../../../services/cart.service';
 })
 export class FoodPageComponent {
   food!: Food;
-
   constructor(
     activatedRoute: ActivatedRoute,
     foodService: FoodService,
@@ -19,15 +18,15 @@ export class FoodPageComponent {
     private router: Router
   ) {
     activatedRoute.params.subscribe((params) => {
-      if (params.id) {
-         foodService.getFoodById(params.id).subscribe((serverFood)=>
-         this.food = serverFood);
-      }
+      if (params.id)
+        foodService.getFoodById(params.id).subscribe((serverFood) => {
+          this.food = serverFood;
+        });
     });
   }
 
-  addToCart(): void{
-this.cartService.addToCart(this.food);
-this.router.navigateByUrl('/cart-page');
+  addToCart() {
+    this.cartService.addToCart(this.food);
+    this.router.navigateByUrl('/cart-page');
   }
 }
