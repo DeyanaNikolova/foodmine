@@ -79,7 +79,7 @@
         1. install @types
         2. Add Apis
     9. npm install nodemon ts-node -- save-dev
-    10. Add user.ts to fronend
+    10. Add urls.ts to fronend
     11. Add HttpClient module
     12. Update food service
 
