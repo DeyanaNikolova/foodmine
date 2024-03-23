@@ -32,8 +32,8 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
