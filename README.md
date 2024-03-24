@@ -107,7 +107,11 @@
         5. Add Logout Method 
             1. Add to Header   
 13. Make Component For Logi Page
-    1. Input Container            
+    1. Input Container  
+    2. Inpur Validation    
+    3. Text Input
+    4. Default Button
+          
 
 
 
