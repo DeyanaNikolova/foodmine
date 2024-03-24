@@ -17,16 +17,18 @@ export class HeaderComponent {
       this.cartQuantity = newCart.totalCount;
     });
 
-    userService.userObservable$.subscribe((newUser)=>{
+    userService.userObservable$.subscribe((newUser) => {
       this.user = newUser;
-    })
+    });
   }
 
-  logout(){
+  logout() {
     this.userService.logout();
   }
 
-  get isAuth(){
+  get isAuth() {
+    console.log(this.user.token);
+    
     return this.user.token;
   }
 }
