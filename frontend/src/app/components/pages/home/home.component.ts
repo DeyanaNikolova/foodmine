@@ -25,9 +25,7 @@ export class HomeComponent {
         foodsObservalbe = this.foodService.getAllFoodsByTag(params.tag);
       else foodsObservalbe = foodService.getAll();
 
-      foodsObservalbe.subscribe((serverFoods) => {
-        console.log(serverFoods);
-        
+      foodsObservalbe.subscribe((serverFoods) => { 
         this.foods = serverFoods;
       });
     });
