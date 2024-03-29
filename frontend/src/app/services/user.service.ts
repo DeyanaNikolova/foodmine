@@ -65,7 +65,7 @@ export class UserService {
     localStorage.setItem(USER_KEY, JSON.stringify(user));
   }
 
-   getUserFromLocalStorage(): User {
+ private  getUserFromLocalStorage(): User {
     const userJson = localStorage.getItem(USER_KEY);
     if (userJson) {
       return JSON.parse(userJson) as User;

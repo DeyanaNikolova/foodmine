@@ -27,7 +27,6 @@ export class HeaderComponent {
   }
 
   get isAuth() {
-    const token = this.userService.getUserFromLocalStorage();
-    return token;
+     return this.user.token;
   }
 }
