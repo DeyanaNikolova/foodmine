@@ -58,26 +58,20 @@ router.post(
   })
 );
 
-const generateTokenResponse = (user: User) => {
+const generateTokenResponse = (user: any) => {
   const token = jwt.sign(
     {
       email: user.email,
       isAdmin: user.isAdmin,
     },
-    process.env.JWT_SECRET!,
+    "SomeRandomText",
     {
       expiresIn: "30d",
     }
   );
 
-  return {
-    id: user.id,
-    email: user.email,
-    name: user.name,
-    address: user.address,
-    isAdmin: user.isAdmin,
-    token: token,
-  };
+ user.token = token;
+ return user;
 };
 
 export default router;
