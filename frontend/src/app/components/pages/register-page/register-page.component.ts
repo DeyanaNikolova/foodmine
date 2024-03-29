@@ -12,7 +12,7 @@ import { PasswordsMatchValidator } from 'src/app/shared/validators/password_matc
 })
 export class RegisterPageComponent implements OnInit {
 registerForm!: FormGroup;
-isSubmited: boolean = false;
+isSubmitted: boolean = false;
 
 returnUrl = '';
 constructor(
@@ -41,7 +41,7 @@ constructor(
   }
 
   submit(){
-    this.isSubmited = true;
+    this.isSubmitted = true;
     if(this.registerForm.invalid){
       return;
     }
