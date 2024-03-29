@@ -5,10 +5,12 @@
     1. Create project's folder
     2. Install @angular/cli
     3. Create App as frontdend
+
 4. Add Header
     1. Generate Component
     2. Add Html
     3. Add Css 
+
 5. List Foods
     1. Create Food model
     2. Create data.ts
@@ -19,6 +21,7 @@
         1. Add ts
         2. Add html
         3. Add css
+
 6. Search
     1. Add method to Food service
     2. Add search route 
@@ -27,7 +30,8 @@
         1. Add to home component
         2. Add ts
         3. Add html
-        4. Add css      
+        4. Add css 
+
 7. Tag Bar
     1. ceate Tag model
     2. Add sample tags to data.ts
@@ -40,7 +44,8 @@
         1. Add to Home component
         2. Ad ts
         3. Add html
-        4. Add css    
+        4. Add css
+
 8. Food page
     1. Add method to food service
     2. Generate Food Page Component
@@ -48,6 +53,7 @@
         2. Add ts
         3. Add html
         4. Add css
+
 9. Cart page
     1. Create CartItem Model
     2. Create Cart Mdel
@@ -58,6 +64,7 @@
         2. Add ts
         3. Add html
         4. Add css
+
 10. Not Found!
     1. Generate Component
         1. Add ts
@@ -66,7 +73,8 @@
     2. Add to pages
         1. Home Page
         2. Food Page
-        3. Cart Page    
+        3. Cart Page  
+
 11. Connect to Backend
     1. Create backend folder
     2. npm init
@@ -82,6 +90,7 @@
     10. Add urls.ts to fronend
     11. Add HttpClient module
     12. Update food service
+
 12. Login Page
     1. Generate Login Component
         1. Add to routes
@@ -106,11 +115,13 @@
         4. Add Local Storage methods
         5. Add Logout Method 
             1. Add to Header   
+
 13. Make Component For Logi Page
     1. Input Container  
     2. Inpur Validation    
     3. Text Input
     4. Default Button
+
 14. Connect Login API to MongoDB Atlas
     1. Moving Apis into routers
     2. Create MongoDB Atlas
@@ -122,16 +133,27 @@
         4. express=async-handler
     5. Connect to MongoDB Atlas
     6. Use MongoDB instead of data.ts in apis  
+
 15. Register User
     1. Add Register api
     2. Add Register service method
     3. Add Register link
     4. Add Register component
+
 16. Loading!
     1. Add Image
     2. Add Component
     3. Add Service
-    4. Add interceptor              
+    4. Add interceptor  
+
+17. Checkout Page
+    1. Create Order Model
+    2. Create Checkout Page Component
+        1. Add to Router
+    3. Add User to User Service
+    4. Add Cart to Cart Service
+    5. Create Order Items List Component    
+
           
 
 
