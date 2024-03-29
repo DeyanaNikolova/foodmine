@@ -1,1 +1,47 @@
-<p>register-page works!</p>
+<div class="container">
+  <div class="details">
+    <app-title title="Register" />
+    <form [formGroup]="registerForm" (ngSubmit)="submit()">
+      <!-- name -->
+      <text-input
+        [control]="fc.name"
+        [showErrorsWhen]="isSubmitted"
+        label="Name"
+      />
+      <!-- email -->
+      <text-input
+        [control]="fc.email"
+        [showErrorsWhen]="isSubmitted"
+        label="Email"
+        type="email"
+      />
+      <!-- password -->
+      <text-input
+        [control]="fc.password"
+        [showErrorsWhen]="isSubmitted"
+        label="Password"
+        type="password"
+      />
+      <!-- confirmPassword -->
+      <text-input
+        [control]="fc.confirmPassword"
+        [showErrorsWhen]="isSubmitted"
+        label="Confirm Password"
+        type="password"
+      />
+      <!-- address -->
+      <text-input
+        [control]="fc.address"
+        [showErrorsWhen]="isSubmitted"
+        label="Address"
+      />
+
+      <default-button text="Register"/>
+
+      <div class="login">
+        Already a user? &nbsp; 
+        <a routerLink="/login" [queryParams]="{ returnUrl: returnUrl }">Login Here</a>
+      </div>
+    </form>
+  </div>
+</div>
