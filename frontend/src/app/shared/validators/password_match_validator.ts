@@ -1,6 +1,6 @@
 import { AbstractControl } from '@angular/forms';
 
-export const PasswordMatchValidator = (
+export const PasswordsMatchValidator = (
   passwordControlName: string,
   confirmPasswordControlName: string
 ) => {
