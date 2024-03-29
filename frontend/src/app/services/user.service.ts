@@ -12,9 +12,7 @@ const USER_KEY = 'User';
   providedIn: 'root',
 })
 export class UserService {
-  private userSubject$$ = new BehaviorSubject<User>(
-    this.getUserFromLocalStorage()
-  );
+  private userSubject$$ = new BehaviorSubject<User>(this.getUserFromLocalStorage());
   public userObservable$: Observable<User>;
 
   constructor(private http: HttpClient, private toastrService: ToastrService) {
