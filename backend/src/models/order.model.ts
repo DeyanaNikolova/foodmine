@@ -25,7 +25,7 @@ export const OrderItemSchema = new Schema<OrderItem>({
 });
 
 export interface Order {
-  id: number;
+  id: string;
   items: OrderItem[];
   totalPrice: number;
   name: string;
@@ -38,12 +38,12 @@ export interface Order {
   updatedAt: Date;
 }
 
-export const OrderSchema = new Schema<Order>(
+ const orderSchema = new Schema<Order>(
   {
     name: { type: String, required: true },
     address: { type: String, required: true },
     adderssLatLng: { type: LatLngSchema, required: true },
-    paymentId: { type: String, required: true },
+    paymentId: { type: String },
     totalPrice: { type: Number, required: true },
     items: { type: [OrderItemSchema], required: true },
     status: { type: String, default: OrderStatus.NEW },
@@ -60,4 +60,4 @@ export const OrderSchema = new Schema<Order>(
   }
 );
 
-export const OrderModel = model('order', OrderSchema);
+export const OrderModel = model('order', orderSchema);
