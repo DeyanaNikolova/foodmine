@@ -11,7 +11,7 @@
     margin-right: 3rem;
 }
 
-.contrnt, form{
+.content, form{
     display: flex;
     flex-direction: column;
 }
