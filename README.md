@@ -174,7 +174,14 @@
         5. Add Order Urls to urls.ts
         6. Add Order Service
             1. Add Create Method 
-        7. Add Auth Interceptor              
+        7. Add Auth Interceptor   
+
+18. Payment Page
+    1. Generate Component
+    2. Add 'getOrderForCurrentUser' api
+    3. Add Order Service method
+    4. Connect to service
+    5. Make the map component readonly                   
 
 
 
