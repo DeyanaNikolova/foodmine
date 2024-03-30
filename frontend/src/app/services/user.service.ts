@@ -35,7 +35,7 @@ return this.userSubject$$.value;
           );
         },
         error: (errorResponse) => {
-          this.toastrService.error(errorResponse.error, 'Login Faild!');
+          this.toastrService.error(errorResponse.error, 'Login Failed!');
         },
       })
     );
