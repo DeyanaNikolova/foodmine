@@ -6,7 +6,7 @@ import { CartPageComponent } from './components/pages/cart-page/cart-page.compon
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
-import { AuthGuard } from './auth/guards/auth.guard';
+import { authGuard } from './auth/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -40,7 +40,7 @@ const routes: Routes = [
   {
     path: 'checkout',
     component: CheckoutPageComponent,
-    canActivate: [AuthGuard]
+    canActivate: [authGuard]
   },
 ];
 
