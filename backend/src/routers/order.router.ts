@@ -53,13 +53,13 @@ router.post(
     }
     order.paymentId = paymentId;
     order.status = OrderStatus.PAYED;
-    await order?.save();
+    await order.save();
 
-    res.send(order?._id);
+    res.send(order._id);
   })
 );
 
-router.get('/track/id', asyncHandler(async (req, res)=>{
+router.get('/track/:id', asyncHandler(async (req, res)=>{
   const order = await OrderModel.findById(req.params.id);
   res.send(order);
 }))
