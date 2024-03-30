@@ -27,6 +27,6 @@ export class HeaderComponent {
   }
 
   get isAuth() {
-     return this.user.token;
+     return localStorage.getItem('User');
   }
 }
