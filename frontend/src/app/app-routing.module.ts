@@ -12,7 +12,7 @@ import { OrderTrackPageComponent } from './components/pages/order-track-page/ord
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
   },
   {

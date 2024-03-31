@@ -19,7 +19,7 @@ router.get(
 );
 
 router.get(
-  "/",
+  "/home",
   asyncHandler(async (req, res) => {
     const foods = await FoodModel.find();
     res.send(foods);
