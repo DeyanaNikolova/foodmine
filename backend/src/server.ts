@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-app.use(express.static(__dirname + '/frontend'));
+app.use(express.static(__dirname + '/index.html'));
 
 
 app.use("/api/foods", foodRouter);
